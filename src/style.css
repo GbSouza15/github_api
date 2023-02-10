@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pr-color: #C2C2C2;
+    --sc-color: #404040;
+
+    --font-primary: 'Poppins', sans-serif;
+}
+
+.title h1{
+    font-family: var(--font-primary);
+    text-align: center;
+    margin-top: 2.5rem;
+    text-decoration: underline;
+    font-size: 3rem;
+}
+
+.input {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    margin-top: 4rem;
+}
