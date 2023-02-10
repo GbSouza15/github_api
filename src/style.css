@@ -11,12 +11,16 @@
     --font-primary: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: var(--pr-color);
+}
+
 .title h1{
     font-family: var(--font-primary);
     text-align: center;
     margin-top: 2.5rem;
     text-decoration: underline;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .input {
@@ -25,4 +29,42 @@
     display: flex;
 
     margin-top: 4rem;
+}
+
+#camp-input {
+    width: 12rem;
+    height: 1.5rem;
+    padding-left: 0.3rem;
+
+    border: none;
+    border-radius: .3rem;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    outline: 0;
+}
+
+#camp-input:focus {
+    border: 1px solid var(--sc-color);
+}
+
+#btn-search {
+    width: 4rem;
+    height: 1.5rem;
+
+    border: none;
+    border-radius: .3rem;
+
+    background-color: var(--sc-color);
+    color: var(--pr-color);
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transform: scale(1) ;
+    transition: ease-in 100ms;
+}
+
+#btn-search:hover {
+    transition: ease-in 100ms;
+    transform: scale(1.1);
 }
