@@ -13,6 +13,7 @@
 
 body {
     background-color: var(--pr-color);
+    font-family: var(--font-primary);
 }
 
 .title h1{
@@ -29,6 +30,12 @@ body {
     display: flex;
 
     margin-top: 4rem;
+}
+
+.input form {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
 }
 
 #camp-input {
@@ -67,4 +74,147 @@ body {
 #btn-search:hover {
     transition: ease-in 100ms;
     transform: scale(1.1);
+}
+
+#avatar {
+    /*background-image: url(https://avatars.githubusercontent.com/u/99755297?v=4);*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 50%;
+
+    margin: 4rem auto;
+}
+
+.list {
+    margin-bottom: 4rem;
+}
+
+.repos-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    justify-items: center;
+
+    gap: 3rem;
+}
+
+.repos-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: .2rem;
+
+    background-color: var(--sc-color);
+    width: 14rem;
+    height: 7rem;
+}
+
+.repo-name a{
+    color: var(--pr-color);
+    font-size: 1.2rem;
+}
+
+.type-language {
+    color: white;
+    font-size: .8rem;
+}
+
+span {
+    font-size: .8rem;
+    color: white;
+}
+
+/*Mobile first*/
+
+@media (min-width: 768px) {
+
+    .title h1{
+        font-size: 3rem;
+    }
+
+    #camp-input {
+        width: 20rem;
+        height: 2rem;
+        padding-left: 0.5rem;
+    }
+
+    #btn-search {
+        width: 5rem;
+        height: 2rem;
+    }
+
+    #avatar {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .repos-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .repos-list li {
+        width: 20rem;
+        height: 10rem;
+    }
+
+    span {
+        font-size: 1.2rem;
+    }
+
+    .type-language {
+        font-size: 1.2rem;
+    }
+
+    .repo-name a{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .title h1{
+        font-size: 4rem;
+    }
+
+    #camp-input {
+        width: 25rem;
+        height: 2.5rem;
+        padding-left: 0.5rem;
+    }
+
+    #btn-search {
+        width: 6rem;
+        height: 2.5rem;
+    }
+
+    #avatar {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .repos-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .repos-list li {
+        width: 23rem;
+        height: 10rem;
+    }
+
+    span {
+        font-size: 1.3rem;
+    }
+
+    .type-language {
+        font-size: 1.3rem;
+    }
+
+    .repo-name a{
+        font-size: 1.8rem;
+    }
 }
