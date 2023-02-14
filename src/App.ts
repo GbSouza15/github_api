@@ -47,3 +47,5 @@ btnSearch.addEventListener('click', (e) => {
             createElements(data)
         })
 })
+
+console.log('oi')
